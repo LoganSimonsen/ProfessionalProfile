@@ -1,0 +1,152 @@
+.App {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  overflow: hidden;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 10vh;
+  -webkit-transition: height 2s;
+  transition: height 2s;
+  /* padding: 20px; */
+  color: white;
+}
+.catsWrapper {
+  color: white;
+  display: inline-flex;
+  justify-content: space-around;
+  width: 100vw;
+  overflow: hidden;
+  height: 95%;
+  margin: 2px;
+  text-align: center;
+}
+.cats {
+  display: flex;
+  width: 33.33vw;
+  /* border: solid white thin; */
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  -webkit-transition: font-size 2s;
+  transition: font-size 0.5s;
+}
+.cats:hover {
+  background: white;
+  color: black;
+  /* box-shadow: 2px 2px 2px 2px #222; */
+  font-size: 3em;
+}
+.App-header:hover {
+  height: 85vh;
+}
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.cats > a {
+  text-decoration: none;
+  color: inherit;
+  line-height: 800px;
+}
+/* STORY */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.story {
+  position: absolute;
+  top: 0px;
+  -webkit-transition: height 2s;
+  transition: height 2s;
+  /* -webkit-transition: height 20s;
+  transition: height 20s; */
+  height: 100vh;
+  width: inherit;
+  /* overflow: hidden; */
+  z-index: 100;
+  /* background: rgb(173, 216, 230); */
+  background: white;
+  justify-content: center;
+  /* align-items: center; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 40px;
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+.backButton {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  top: 5px;
+  left: 5px;
+  background: white;
+  border-radius: 25px;
+  color: black;
+  font-size: 2em;
+  box-shadow: 2px 2px 2px 2px black;
+}
+.backButton:hover {
+  background: black;
+  /* border: #00c500 thin solid; */
+  color: white;
+  cursor: pointer;
+}
+.backButton:active {
+  box-shadow: none;
+}
+.story > a {
+  text-decoration: none;
+}
+/* SKILLS */
+.icons {
+  padding-left: 65px;
+  padding-right: 65px;
+  margin: 0 auto;
+  font-size: 5em;
+  color: black;
+  font-weight: 600;
+  height: 200px;
+  line-height: 1;
+}
+.icons:hover {
+  color: rgb(0, 0, 0, 0.7);
+}
+.skillName {
+  font-size: 30px;
+}
+.hr {
+  width: 90vw;
+  font-weight: 800;
+}
+.swal-modal {
+  height: 90vh;
+  width: 90vw;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

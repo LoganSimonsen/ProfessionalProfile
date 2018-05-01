@@ -22,7 +22,7 @@ class Story extends Component {
           }}
         >
           &emsp;&emsp; Last year I was working as a lead member of the Service
-          Desk Infrastructure Support Team at{" "}
+          Desk Infrastructure Support Team at
           <a href="www.cardtronics.com">Cardtronics</a>, an ATM company in
           Frisco, TX. Cardtronics not only owns ATM's, but they also provide the
           transaction network to allow customers to connect with their financial
@@ -68,14 +68,14 @@ class Story extends Component {
           <br />
           <br />
           <a href="https://devmountain.com">DevMountain</a> was the most
-          intellectually challenging things I have ever done. I could not
-          imagine learning more within a 3 month period as I did at DevMountain.
-          During the course we focused on React, Redux, Express, Node, SQL and
-          advance JavaScript. After just a few weeks in the program I was
-          building full stack applications, working with 3rd party API's, and
-          not sleeping very often. I am really proud to be a DevMountain Alumni
-          and would recommend the program to anyone who wants to accelerate
-          their learning in web development.
+          intellectually challenging thing I have ever done. I could not imagine
+          learning more within a 3 month period as I did at DevMountain. During
+          the course we focused on React, Redux, Express, Node, SQL and advance
+          JavaScript. After just a few weeks in the program I was building full
+          stack applications, working with 3rd party API's, and not sleeping
+          very often. I am really proud to be a DevMountain Alumni and would
+          recommend the program to anyone who wants to accelerate their learning
+          in web development.
         </p>
       </div>
     );

@@ -64,7 +64,7 @@ class Skills extends Component {
           </div>
           <br />
         </div>
-        <h1>Skills in Progress...</h1>
+        <h1 style={{ color: "white" }}>Skills in Progress...</h1>
         <i class="devicon-java-plain icons">
           <br />
           <span className="skillName">Java</span>

@@ -1,3 +1,11 @@
+a {
+  /* text-decoration: none; */
+  color: inherit;
+  font-weight: 600;
+}
+a:hover {
+  text-decoration: none;
+}
 .App {
   text-align: center;
   justify-content: center;
@@ -26,7 +34,7 @@
   justify-content: space-around;
   width: 100vw;
   overflow: hidden;
-  height: 95%;
+  height: 99%;
   margin: 2px;
   text-align: center;
 }
@@ -47,7 +55,7 @@
   font-size: 3em;
 }
 .App-header:hover {
-  height: 85vh;
+  height: 75vh;
 }
 .App-title {
   font-size: 1.5em;
@@ -83,7 +91,7 @@
   /* overflow: hidden; */
   z-index: 100;
   /* background: rgb(173, 216, 230); */
-  background: white;
+  background: black;
   justify-content: center;
   /* align-items: center; */
   display: flex;
@@ -91,6 +99,10 @@
   justify-content: space-between;
   padding: 40px;
   animation: 1s ease-out 0s 1 slideInFromLeft;
+  overflow: scroll;
+}
+.storyBackground {
+  /* background-image: url("https://i.pinimg.com/originals/fc/1a/79/fc1a79858fbfff72ce6b96d62f065dc4.jpg"); */
 }
 .backButton {
   width: 50px;
@@ -98,16 +110,16 @@
   position: fixed;
   top: 5px;
   left: 5px;
-  background: white;
+  background: black;
   border-radius: 25px;
-  color: black;
+  color: white;
   font-size: 2em;
-  box-shadow: 2px 2px 2px 2px black;
+  box-shadow: 2px 2px 2px 2px white;
 }
 .backButton:hover {
-  background: black;
+  background: white;
   /* border: #00c500 thin solid; */
-  color: white;
+  color: black;
   cursor: pointer;
 }
 .backButton:active {
@@ -118,17 +130,17 @@
 }
 /* SKILLS */
 .icons {
-  padding-left: 65px;
-  padding-right: 65px;
+  padding-left: 85px;
+  padding-right: 85px;
   margin: 0 auto;
   font-size: 5em;
-  color: black;
-  font-weight: 600;
+  color: white;
+  /* font-weight: 600; */
   height: 200px;
   line-height: 1;
 }
 .icons:hover {
-  color: rgb(0, 0, 0, 0.7);
+  opacity: 0.7;
 }
 .skillName {
   font-size: 30px;
@@ -141,7 +153,59 @@
   height: 90vh;
   width: 90vw;
 }
-
+.devicon-javascript-plain {
+  color: #f0db4f;
+}
+.devicon-react-original {
+  color: #61dbfb;
+}
+.devicon-html5-plain {
+  color: #f16529;
+}
+.devicon-css3-plain {
+  color: #1572b6;
+}
+.devicon-nodejs-plain {
+  color: #8bc500;
+}
+.devicon-postgresql-plain {
+  color: #336791;
+}
+.devicon-git-plain {
+  color: #f05133;
+}
+.devicon-bootstrap-plain {
+  color: #573d7a;
+}
+.devicon-java-plain {
+  color: #e74c3c;
+}
+.devicon-python-plain {
+  color: #376d9c;
+}
+.devicon-vuejs-plain {
+  color: #41b883;
+}
+/* 61dbfb 
+1572B6
+8BC500
+336791
+F05133
+573D7A
+E74C3C
+376D9C
+41B883
+*/
+/* Accomplishments */
+.myClassname {
+  padding: 20px;
+  height: 500px;
+  width: 500px;
+}
+.projectsWrapper {
+  padding: 40px;
+  color: white;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

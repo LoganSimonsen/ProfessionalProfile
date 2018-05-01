@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import "./App.css";
 import routes from "./routes";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import image1 from "./screenCapPDF.png";
 
 let count = 0;
 class App extends Component {
@@ -19,9 +20,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <h1 className="App">Logan Simonsen</h1>
-        <h2 className="App">WEB DEVELOPER</h2>
-        <br />
+        <img src={image1} />
         {routes}
       </div>
     );

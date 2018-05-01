@@ -15,12 +15,15 @@ class App extends Component {
       array: ["W", "e", "l"]
     };
   }
+
+  // <img src={image1} className="PDF" />
+
   componentDidMount() {}
   render() {
     return (
       <div className="App">
         <Header />
-        <img src={image1} />
+        <img src={image1} className="PDF" />
         {routes}
       </div>
     );

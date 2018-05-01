@@ -14,7 +14,12 @@ a:hover {
   overflow: hidden;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-
+.PDF {
+  max-height: 1200px;
+}
+/* .PDF:hover {
+  zoom: 1.2;
+} */
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
@@ -55,7 +60,7 @@ a:hover {
   font-size: 3em;
 }
 .App-header:hover {
-  height: 75vh;
+  height: 50vh;
 }
 .App-title {
   font-size: 1.5em;
@@ -198,12 +203,12 @@ E74C3C
 */
 /* Accomplishments */
 .myClassname {
-  padding: 20px;
+  padding: 5px;
   height: 500px;
   width: 500px;
 }
 .projectsWrapper {
-  padding: 40px;
+  /* padding: 40px; */
   color: white;
 }
 @keyframes App-logo-spin {
@@ -212,5 +217,17 @@ E74C3C
   }
   to {
     transform: rotate(360deg);
+  }
+}
+@media only screen and (max-width: 800px) {
+  .PDF {
+    zoom: 0.65;
+  }
+  .myClassname {
+    zoom: 0.6;
+  }
+  .projectsWrapper {
+    overflow: scroll;
+    width: 96vw;
   }
 }

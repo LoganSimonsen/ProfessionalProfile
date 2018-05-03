@@ -15,7 +15,7 @@ class Header extends Component {
             <Link to="/Skills">SKILLS</Link>
           </div>
           <div className="cats">
-            <Link to="/Accomplishments">Projects</Link>
+            <Link to="/Accomplishments">PROJECTS</Link>
           </div>
         </div>
       </header>

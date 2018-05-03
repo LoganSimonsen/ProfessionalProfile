@@ -57,7 +57,15 @@ a:hover {
   background: white;
   color: black;
   /* box-shadow: 2px 2px 2px 2px #222; */
-  font-size: 3em;
+  font-size: 2.7em;
+}
+.headShot {
+  position: fixed;
+  left: 5px;
+  down: 300px;
+  /* zoom: 0.3; */
+  height: 200px;
+  /* border-radius: 50%; */
 }
 .App-header:hover {
   height: 50vh;

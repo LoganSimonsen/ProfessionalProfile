@@ -23,7 +23,7 @@ class Story extends Component {
         >
           &emsp;&emsp; Last year I was working as a lead member of the Service
           Desk Infrastructure Support Team at
-          <a href="www.cardtronics.com">Cardtronics</a>, an ATM company in
+          <a href="www.cardtronics.com"> Cardtronics</a>, an ATM company in
           Frisco, TX. Cardtronics not only owns ATM's, but they also provide the
           transaction network to allow customers to connect with their financial
           institutions. The Infrastructure Support Team's job was to monitor

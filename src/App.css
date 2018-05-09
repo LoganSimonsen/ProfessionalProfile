@@ -1,19 +1,29 @@
-a {
-  /* text-decoration: none; */
+.buttonLinks {
+  text-decoration: none;
   color: inherit;
+  transition: background-color 2s;
+  -webkit-transition: background-color 2s;
+  border-bottom: solid thin white;
+  border-radius: 50px;
+  width: 100px;
+  background-color: inherit;
 }
 p {
   margin: 5px !important;
 }
-a:hover {
+.buttonLinks:hover {
   text-decoration: none;
+  border-bottom: solid thin white;
+  border-radius: 50px;
+  background-color: white;
+  color: black;
 }
 .App {
   text-align: center;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  overflow: hidden;
+  overflow: scroll;
   font-family: lato, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background: rgb(34, 34, 34, 0.9);
 }
@@ -64,7 +74,7 @@ a:hover {
   justify-content: center;
   align-items: center;
   -webkit-transition: font-size 2s;
-  transition: font-size 0.5s;
+  transition: font-size 2s;
 }
 .cats:hover {
   background: white;
@@ -76,7 +86,8 @@ a:hover {
   /* zoom: 0.3; */
   margin: 10px;
   height: 200px;
-  /* border-radius: 50%; */
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px 1px #222;
 }
 .App-header:hover {
   height: 50vh;
@@ -229,6 +240,8 @@ E74C3C
 .projectsWrapper {
   /* padding: 40px; */
   color: white;
+  justify-content: space-between;
+  overflow: hidden !important;
 }
 @keyframes App-logo-spin {
   from {
@@ -237,6 +250,39 @@ E74C3C
   to {
     transform: rotate(360deg);
   }
+}
+.projects {
+  width: 100%;
+  justify-content: center !important;
+  align-items: center;
+  position: absolute;
+  top: 0px;
+  text-align: center;
+  /* overflow: hidden; */
+  z-index: 100;
+  /* background: rgb(173, 216, 230); */
+  background: black;
+  /* align-items: center; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 60px 0px 60px 0px;
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.singleProjectBox {
+  display: inline-flex;
+  align-items: center;
+  overflow: hidden;
+}
+.projectLinks {
+  text-decoration: none;
+  color: blue;
+  transition: color 0.5s;
+}
+.projectLinks:hover {
+  color: white;
 }
 @media only screen and (max-width: 800px) {
   .PDF {
@@ -249,9 +295,23 @@ E74C3C
     overflow: scroll;
     width: 96vw;
   }
+  .cats:hover {
+    font-size: 2.1em;
+  }
+  .singleProjectBox {
+    display: flex;
+    flex-direction: column;
+  }
 }
 @media only screen and (max-width: 500px) {
   .PDF {
     zoom: 0.45;
+  }
+  .cats:hover {
+    font-size: 1.5em;
+  }
+  .singleProjectBox {
+    zoom: 0.7;
+    border: solid white thin;
   }
 }
